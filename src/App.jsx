@@ -6,7 +6,7 @@ import thanos1 from './assets/thanos1.jpg'
 import hulk1 from './assets/hulk1.jpeg'
 import spidey1 from './assets/spidey1.jpeg'
 import SingleCard from "./Components/SingleCard"
-
+import bgimg from'./assets/bgimg.jpg'
 
 const cardgame=[
   {id:1 , src:cap1 , matched:false},
@@ -105,11 +105,13 @@ function App() {
     
   },[])
 
-console.log(cards)
+  const styleBg={
+    backgroundImage: `url(${bgimg})`
+  }
 
   return (
     <>
-      <div className="w-full min-h-screen bg-[url('https://static1.cbrimages.com/wordpress/wp-content/uploads/2018/12/avengers-4-logo-1-header.jpg')] bg-center flex justify-center items-center ">
+      <div className={`w-full min-h-screen bg-[url('${bgimg}')] bg-center flex justify-center items-center `} style={styleBg}>
 
         <div className="w-full h-full bg-black/50 border-white flex flex-col items-center py-10">
           <p className="text-6xl text-white font-semibold"> Memory Game</p>
