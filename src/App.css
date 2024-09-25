@@ -1,0 +1,8 @@
+.flipped
+{
+    transform: rotateX(0);
+}
+.card 
+{
+    transform: rotateX('90deg');
+}
